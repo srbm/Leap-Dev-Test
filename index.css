@@ -39,8 +39,21 @@ ul {
 	color: white;
 }
 
-.location-text li, h4, h5 {
+.location-text li, 
+.location-text h3, 
+.location-text h4, 
+.location-text a {
 	font-weight: lighter;
+	color: white;
+}
+
+.location-text {
+	margin-left: 33%;
+	
+}
+
+.fb-blue {
+	padding-top: 5px;
 }
 
 .row-location {
@@ -49,20 +62,20 @@ ul {
 
 .location {
 	flex: 1;
-	max-height: 288px;
+	max-height: 295px;
 	
 }
 
 
 .map {
 	position: relative;
-	padding: 0;
+	padding: 0px;
 }
 .screen-shot {
 	position: relative;
 	top: 0;
 	left: 0;
-	max-height: 288px;
+	max-height: 295px;
 	min-width: 100%;
 }
 .zoom {
@@ -77,6 +90,7 @@ ul {
 
 .bottom-nav {
 	background-color: black;
+	margin-bottom: 0px;
 }
 
 .bottom-nav a {
@@ -89,10 +103,18 @@ ul {
 	text-align: center;
 }
 
+.row-bot-nav {
+	margin-bottom: 0px;
+}
+
 .bot-nav-1 li {
 	display: inline-block;
 }
 
 .banner-pic {
 	width: 100%;
+}
+
+.terms-row {
+	font-size: .7em;
 }
