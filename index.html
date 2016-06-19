@@ -25,7 +25,7 @@
 			<nav class="navbar navbar-default top-nav" role="navigation">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-md-9 col-md-offset-2">	
+						<div class="col-md-10 col-md-offset-2">	
 							<ul class="nav nav-pills">
 								<li role="presentation" class="active btn btn-primary btn-lg">Example Site</li>
 								<li><a href="#">how it works</a></li>
@@ -33,7 +33,7 @@
 								<li><a href="#">our locations</a></li>
 								<li><a href="#">faq</a></li>
 								<li><a href="#">contact us</a></li>
-								<li><a href="#"><img src="fb_circle.jpg"></a></li>
+								<li><a href="#"><img src="images/fb_circle.jpg"></a></li>
 								<li><a href="tel:555-555-5555"><button class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> 555-555-5555</button></a></li>
 							</ul>
 						</div>
@@ -63,17 +63,19 @@
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
 					<form method="post">
-						<div class="form-group">
-							<input type="text" class="form-control" id="name" placeholder="First Name">
+						<div class="form-group required">
+							<div class="required">
+								<input type="text" class="form-control" id="name" placeholder="First Name" required>
+							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group required">
 							<input type="email" class="form-control" id="email" placeholder="Email">
 						</div>
 						<div class="form-group">
 							<input type="text" class="form-control" id="subject" placeholder="Subject">
 						</div>
 						<div class="form-group">
-							<input type="textarea" class="form-control message-box" id="message" placeholder="Message">
+							<textarea name="textarea" rows="7" class="form-control message-box" id="message" placeholder="Message"></textarea>
 						</div>
 						<div class="form-group">
 							<button style="width:100%" type="submit" class="btn btn-primary btn-submit">Submit</button>
@@ -83,11 +85,13 @@
 			</div>
 		</div>
 		
+		
+		
 		<!-- Location and Map  -->
 		
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 blue-back">
+			<div class="row row-location">
+				<div class="col-md-6 blue-back location">
 					<p>
 						<ul class="location-text">
 							<li><h4>Our Location</h4></li>
@@ -100,16 +104,15 @@
 							<li>San Antonio: 555-555-5555</li>
 							<li>Toll Free: 800-585-5555</li>
 							<br>
-							<li style=""><a class="location-link" href="facebook.com/leap"><img src="fb_blue.jpg"></a></li>
+							<li style=""><a class="location-link" href="facebook.com/leap"><img src="images/fb_blue.jpg"></a></li>
 						</ul>
 					</p>
 				</div>
 				
-				<div class="map col-md-6">
+				<div class="col-md-6 map location">
 					<!-- Google map -->
-					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-					<div style='overflow:hidden;height:375px;width:700px;'><div id='gmap_canvas' style='height:288px;width:600px;'></div>
-						<style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(38.2102451,-85.54782769999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(38.2102451,-85.54782769999997)});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+					<img class="screen-shot" src="images/Screen-Shot-2015-03-27-at-4.53.17-PM.png">
+					<img class="zoom" src="images/Zoom.png">
 				</div>
 				
 				
@@ -124,7 +127,7 @@
 			<div class="container">
 				<div class="row">
 					
-					<div class="col-sm-6 col-sm-offset-3">
+					<div class="col-sm-10 col-sm-offset-3">
 						<ul class="nav nav-pills bot-nav-1" style="list-style:none">
 							<li><a href="#">about us</a></li>
 							<li><a href="#">how it works</a></li>
