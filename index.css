@@ -18,13 +18,28 @@ ul {
 	background-color: white;
 	font-variant: small-caps;
 	margin-top: 15px;
-	margin-bottom: 0;
-	text-align: bottom;
+	margin-bottom: 0px;
 }
 .top-nav a {
 	color: black;
 }
 
+.top-nav-bottom-set ul {
+	display: flex;
+	height: 100%;
+}
+
+.top-nav-bottom-set li {
+	display: inline-block;
+	align-self: flex-end;
+}
+
+.active {
+	margin-bottom: 12px;
+	margin-right: 30px;
+	padding: 3px;
+	font-size: 1.8em;
+}
 
 .btn-submit {
 	border-radius: 15px;
@@ -62,7 +77,7 @@ ul {
 
 .location {
 	flex: 1;
-	max-height: 295px;
+	height: 450px;
 	
 }
 
@@ -75,15 +90,15 @@ ul {
 	position: relative;
 	top: 0;
 	left: 0;
-	max-height: 295px;
+	max-height: 450px;
 	min-width: 100%;
 }
 .zoom {
 	width: 1.5em;
 	height: 3em;
 	position: absolute;
-	top: 36px;
-	left: 30px;
+	top: 13px;
+	left: 25px;
 	
 }
 
