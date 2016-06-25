@@ -110,6 +110,8 @@ ul {
 /*  Map Images */
 
 .map {
+	background: url(images/Screen-Shot-2015-03-27-at-4.53.17-PM.png);
+	background-size: cover;
 	position: relative;
 	padding: 0px;
 	height: inherit;
